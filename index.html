@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Калькулятор</title>
+  <meta name="theme-color" content="#0f172a">
+  <meta name="description" content="Простой калькулятор как PWA-приложение">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" href="icons/icon-192.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="icons/icon-192.svg">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="calculator">
+    <h1>Калькулятор</h1>
+    <input id="display" class="display" type="text" value="0" readonly>
+    <div class="buttons">
+      <button data-action="clear" class="accent">C</button>
+      <button data-action="backspace" class="accent">⌫</button>
+      <button data-action="operator" data-value="/" class="operator">÷</button>
+      <button data-action="operator" data-value="*" class="operator">×</button>
+
+      <button data-action="digit" data-value="7">7</button>
+      <button data-action="digit" data-value="8">8</button>
+      <button data-action="digit" data-value="9">9</button>
+      <button data-action="operator" data-value="-" class="operator">−</button>
+
+      <button data-action="digit" data-value="4">4</button>
+      <button data-action="digit" data-value="5">5</button>
+      <button data-action="digit" data-value="6">6</button>
+      <button data-action="operator" data-value="+" class="operator">+</button>
+
+      <button data-action="digit" data-value="1">1</button>
+      <button data-action="digit" data-value="2">2</button>
+      <button data-action="digit" data-value="3">3</button>
+      <button data-action="equals" class="equals">=</button>
+
+      <button data-action="digit" data-value="0" class="zero">0</button>
+      <button data-action="decimal" data-value=".">.</button>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
